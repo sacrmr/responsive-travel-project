@@ -21,6 +21,7 @@ margin: 0 auto;
     display: block;
      }
 
+     
 .grid-2-columns{
     grid-template-columns: 1fr 1fr;
 }
@@ -36,29 +37,20 @@ margin: 0 auto;
     background: white;
     margin:30px 0;
 }
-.card-header.grid{
-grid-gap:0;
+
+.card h4{
+    text-align: center;
 }
 
-.embed{
-    width: 100%;
-    aspect-ratio: 1/1;
-}
-
-.facebook-embed{
-    padding-top: 20px;
-    max-width: 100%;
-}
-
-.card-body{
+.card-body {
     padding: 30px;
 }
 
-.card-footer{
+.card-footer {
     padding: 0px 20px 20px;
 }
 
-.btn{
+.btn {
     display: block;
     color: white;
     font-weight: 700;
@@ -70,7 +62,12 @@ grid-gap:0;
     text-decoration: none;
     padding: 16px;
     background: #0C1E47;
+}
 
+
+.embed{
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 
 section{
@@ -83,7 +80,7 @@ section.secondary{
     background: #eaf0ff;
 }
 
-header{
+.hero{
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), 
     url("../images/main-view.jpg");
     background-repeat: no-repeat;
@@ -91,23 +88,24 @@ header{
     color: white;
     text-align: center;
     padding: 200px 0;
+    filter: brightness(1.2);
 }
 
-header h1{
+.hero h1{
     font-weight: 700;
     font-size: 96px;
     line-height: 1;
     margin: 30px 0;
 }
 
-header h2{
+.hero h2{
     font-weight: 400;
     font-size: 40px;
     line-height: 1.5;
     margin: 0;
 }
 
-header h3{
+.hero h3{
     font-weight: 900;
     font-size: 24px;
     letter-spacing: 3px;
@@ -115,7 +113,7 @@ header h3{
     margin: 0;
 }
 
-header a{
+.hero a{
     background:white;
     color:#0C1E47;
     display:inline-block;
@@ -176,11 +174,21 @@ main p{
     opacity: 0.7;
 }
 
+.facebook-embed {
+    padding-top: 20px;
+    max-width: 100%;
+}
+
+.gallery-table td {
+    padding: 10px;
+}
+
 footer{
     color:white;
-    background-image: linear-gradient(rgba(12,30,71,0.8), rgba(12,30,71,0.8)), url("../images/whale-tail.jpg");
+    background-image: linear-gradient(rgba(12,30,71,0.8), rgba(12,30,71,0.8)), url("../images/whale.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    filter: brightness(1.3);
    
 }
 
@@ -212,18 +220,17 @@ footer a{
 }
 
 @media (max-width: 960px){
-    header{
+    .hero{
         padding:60px 0;
     }
-    header h1{
+    .hero h1{
     font-size: 48px;
     }
-
-    header h2{
+    .hero h2{
         font-size: 20px;
     }
 
-    header h3{
+    .hero h3{
         font-size: 12px;
     }
 
@@ -237,15 +244,39 @@ footer a{
 
     }
 
-    .card-header img{
+.card-header img{
     display: none;
     }
 
  .embed{
     aspect-ratio: 16 / 9;
  }
-.facebook-embed{
-   aspect-ratio:  16 / 9;
+
+.gallery-table td {
+    display:inline-block;
+    margin: 0;
+    
 }
- 
+
+
+
+footer h3{
+font-size: 16px;
+line-height: 10px;
+
+}
+
+ footer p{
+    font-size: 14px;
+ }
+ footer li {
+     font-size: 14px;
+ }
+
+}
+
+@media (min-width: 960px){
+.facebook-embed{
+    aspect-ratio: 16 / 9;
+}
 }
