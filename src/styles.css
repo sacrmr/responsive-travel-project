@@ -19,14 +19,13 @@ margin: 0 auto;
 .img-responsive {
     width: 100%;
     display: block;
-    
-        }
+     }
 
 .grid-2-columns{
     grid-template-columns: 1fr 1fr;
 }
 .grid-3-columns{
-grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-3-columns-narrow{
@@ -44,6 +43,11 @@ grid-gap:0;
 .embed{
     width: 100%;
     aspect-ratio: 1/1;
+}
+
+.facebook-embed{
+    padding-top: 20px;
+    max-width: 100%;
 }
 
 .card-body{
@@ -72,7 +76,7 @@ grid-gap:0;
 section{
     max-width: 100%;
     margin: 0 auto;
-    padding: 100px;
+    padding: 80px;
 }
 
 section.secondary{
@@ -236,7 +240,12 @@ footer a{
     .card-header img{
     display: none;
     }
+
  .embed{
     aspect-ratio: 16 / 9;
  }
+.facebook-embed{
+   aspect-ratio:  16 / 9;
+}
+ 
 }
